@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: none;
+}
+
+
+h1 {
+    color: white;
+}
+
+.trail {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fadeOut 1s ease-out forwards;
+    z-index: 3; /* Ensure it sits above the image */
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+img {
+    width: 650px;
+}
+
+#name {
+    position: relative;
+    text-align: center;
+}
+
+/* NAVBAR */
+.socials {
+    background-color: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 47px;
+    bottom: 20px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    position: relative;
+    right: 20px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 25px;
+    transition: transform .5s ease;
+}
+
+a:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+a:before {
+    left: -2.5px;
+}
+
+a:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+a:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+.navbar {
+    background-color: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    position: relative;
+    right: 20px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 25px;
+    transition: transform .5s ease;
+}

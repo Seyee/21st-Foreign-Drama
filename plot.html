@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/plot.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>21st</title>
+</head>
+<body>
+    <h1>Plot</h1>
+    
+    <body>
+        <nav class="navbar">
+            <div class="navdiv">
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="plot.html">Plot</a></li>
+                    <li><a href="setting.html">Setting</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="conflict.html">Conflict</a></li>
+                    <li><a href="symbolism.html">Symbolism</a></li>
+                    <li><a href="pov.html">Point of View</a></li>
+                    <li><a href="theme.html">Theme</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="socials">
+            <div class="navdiv">
+                <ul>
+                    <li><a href="https://www.facebook.com/sayieehhwang" target="_blank"><i class='bx bxl-facebook-square'></i>Facebook</a></li><br>
+                    <li><a href="https://www.instagram.com/sayieeh/" target="_blank"><i class='bx bxl-instagram-alt'></i>Instagram</a></li><br>
+                    <li><a href="https://t.me/Shuye90" target="_blank"><i class='bx bxl-telegram' ></i>Telegram</a></li><br><br>
+                    <li><a href="https://discord.gg/pQZEM2DZn5" target="_blank"><i class='bx bxl-discord-alt' ></i></i>Our Discord Community</a></li><br>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            // JavaScript to create and manage the cursor trail
+            document.addEventListener("mousemove", (e) => {
+                const trail = document.createElement("div");
+                trail.classList.add("trail");
+                document.body.appendChild(trail);
+    
+                // Set the trail's position to the cursor's position
+                trail.style.left = `${e.clientX}px`;
+                trail.style.top = `${e.clientY}px`;
+    
+                // Remove the trail after the animation ends
+                setTimeout(() => {
+                    trail.remove();
+                }, 1000);
+            });
+
+            
+        </script>
+
+</body>
+</html>
